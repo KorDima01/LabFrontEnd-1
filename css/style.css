@@ -4,3 +4,33 @@ body{
   min-width: 320px;
 
 }
+a{
+  color: #b8b8b8;
+}
+a:hover{
+  color: #18cfab;
+}
+header {
+  background-color: #44433e;
+}
+header .navbar-brand{
+  text-transform: uppercase;
+  font-family: "Montserrat",sans-serif;
+  font-size: 13pt;
+}
+header .nav-item{
+  text-transform: uppercase;
+  margin-left: 5px;
+}
+header .nav-item a::after{
+  content: '';
+  display: block;
+  width: 100%;
+  background-color: #18cfab;
+  height: 1px;
+  transform: scale(0);
+}
+header .nav-item a:hover::after{
+  transform: scale(1);
+  transform:translateY(36px);
+}
